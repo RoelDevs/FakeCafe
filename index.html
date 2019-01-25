@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<head>
+    <!-- Title-->
+    <title>
+    Fake Cafe
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/qt5T21Q.png"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+    <!-- Header-->
+    <div id="home">
+        <nav>
+            <div class="logo">
+                Fake Cafe
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="intro">
+        <div class="inner">
+            <div class="content">
+                <h1>Welcome</h1>
+                <a class="btn" href="#about">Get Seated</a>
+                
+            </div>
+
+        </div>
+
+
+    </section>
+    
+    <div class="bg" id="about">
+        <div class="headers">
+        <h3>About</h3>
+    </div>
+    <img class="imgA1" src="https://i.imgur.com/gZIBRoL.jpg">
+    <p>Fake Café is a new and upcoming Café based in The Netherlands with currently a single location in Maastricht. The reason for only having a single location is that the café is not actually a real café but a imaginary café. It only exists as an idea that was made up for a English project at school. The reason for making a website about a café is that I always enjoyed the calming and relaxing idea of cafes and to be honest could not think of anything else right away. But hopefully even though it is not a real café you will still enjoy our website!.</p>
+    </div>
+    
+    <div class="bg" id="menu">
+         
+        <div class="headers">
+        <h3>Menu</h3>
+        </div>
+        <img class="imgB1" src="https://i.imgur.com/5FTsPf2.png">
+    </div>
+
+    <div class="bg" id="history">
+            <div class="headers">
+            <h3>History</h3>
+            </div>
+            <img class="imgA1" src="https://i.imgur.com/9tF5AAn.jpg">
+        <p>Since Fake Café is not an actually café you can visit but just an idea for a project I made up there’s not much history to our café. Although by now the café would be around a month old and still going strong with hopefully lots and lots of customers buying and enjoying all our products on the menu!
+            We also believe something doesn’t need to have a strong history to be competitive these days in the market as long as you can satisfy the customer needs en put a smile on their face when they leave.
+            </p>
+        </div>
+
+        <div class="bg" id="contact">
+                <div class="headers">
+                <h3>Contact</h3>
+                </div>
+             
+            <p>If you enjoy the idea of a actual website made about your café or anything else you’d like a website for. Please do not hesitate to send us a message at the following e-mail address: FakeCafe@gmail.com or you may also call us at 06-36065132. We appreciate you reading and looking at our website even though there was actually no good information about a actual café. </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d288.7833133416564!2d5.732213742376466!3d50.84295672322913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0ea267bccbe6f%3A0xe2b8beb79c8d93b5!2sAkersteenweg%2C+Maastricht!5e0!3m2!1sen!2snl!4v1546612417472" width="1519" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>    
+        </div>
+
+            <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+           
+
+            <footer class="mainFooter">
+                <p>Copyright &copy; 2018 FakeCafe </p>
+                </footer>
+
+         
+
+    <script type="text/javascript">
+
+        // Menu-toggle button
+  
+        $(document).ready(function() {
+              $(".menu-icon").on("click", function() {
+                    $("nav ul").toggleClass("showing");
+              });
+        });
+  
+        // Scrolling Effect
+  
+        $(window).on("scroll", function() {
+              if($(window).scrollTop()) {
+                    $('nav').addClass('black');
+              }
+  
+              else {
+                    $('nav').removeClass('black');
+              }
+        })
+
+
+  
+        </script>
+        <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+       
+                var target = this.hash,
+                    $target = $(target);
+       
+                $('html, body').animate({
+                    'scrollTop': $target.offset().top - 100
+                }, 1000, function () {});
+            });
+            
+        });
+
+</script>
+
+
+</body>
+</html>
